@@ -5,7 +5,7 @@ We use the deep learning model used by the xing-hu in her implememtation of the 
 
 # AST Generation of the Code 
 
-We refer the AST generation by the xing-hu to generate the AST.[Code to generate the AST of the code ](https://github.com/xing-hu/EMSE-DeepCom/blob/master/data_utils/get_ast.py). 
+We refer the AST generation by the xing-hu to generate the AST.[Code to generate the AST of the code ] (https://github.com/xing-hu/EMSE-DeepCom/blob/master/data_utils/get_ast.py). 
 
 # Prufer Sequence Generation 
 
