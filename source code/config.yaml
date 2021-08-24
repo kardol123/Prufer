@@ -121,7 +121,7 @@ encoders:                # this is a list (you can specify several encoders)
   - name: code             # each encoder or decoder has a name (used for naming variables) and an extension (for files)
     max_len: 200          # max_len of api
     attention_type: global
-  - name: sbt
+  - name: prufer
     max_len: 500
     attention_type: global
 
