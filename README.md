@@ -4,6 +4,8 @@ We use the deep learning model used by the xing-hu in her implememtation of the 
 
 # Model Training
 ```
+git clone https://github.com/kardol123/Prufer.git
+
 cd Prufer/ source code 
 
 python3 __main__.py config.yaml --train -v
