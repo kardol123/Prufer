@@ -4,8 +4,6 @@ We use the deep learning model used by the xing-hu in her implememtation of the 
 
 # Model Training
 ```
-git clone https://github.com/kardol123/Prufer.git
-
 cd Prufer/ source code 
 
 python3 __main__.py config.yaml --train -v
@@ -22,6 +20,22 @@ We refer the AST generation by the xing-hu to generate the AST. [Code to generat
 
 # Prufer Sequence Generation 
 
+Following are the steps for generation for Prufer sequence generation
+
+1) Generate the CSV File from AST file . 
+
+```
+python3 ASTtoCSV.py
+
+```
+2) Generate the Prufer sequence 
+
+
+```
+
+python3 PruferSequenceGeneration.py
+
+```
 
 # Context of the Code generation 
 
