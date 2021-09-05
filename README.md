@@ -1,6 +1,6 @@
 # Prufer Model 
 
-We use the deep learning model used by the xing-hu in her implememtation of the code summrization task. The original code is [avialeble here ](https://github.com/xing-hu/EMSE-DeepCom.git)
+We use the deep learning model used by the xing-hu in her implementation of the code summarization task. The original Code of xing-hu implementation is [available  here ](https://github.com/xing-hu/EMSE-DeepCom.git)
 
 # Model Training
 ```
@@ -11,18 +11,18 @@ python3 __main__.py config.yaml --train -v
 ```
 # To Evaluate the Model 
 
-The metrics for the evaluation of the code are BLEU, METEOR and are calulated as per the xing-hu in her implememtation of the code summrization task. [The metrics implementation is available here  ](https://github.com/xing-hu/EMSE-DeepCom/tree/master/scripts). The ROUGE-L is a standard implemention with pyhton library. 
+The metrics for the evaluation of the Code are BLEU, METEOR and are calculated as per the xing-hu in her implementation of the code summarization task. [The metrics implementation is available here  ](https://github.com/xing-hu/EMSE-DeepCom/tree/master/scripts). The ROUGE-L is a standard implementation with the python library. 
 
 
 # AST Generation of the Code 
 
-We refer the AST generation by the xing-hu to generate the AST. [Code to generate the AST of the code ](https://github.com/xing-hu/EMSE-DeepCom/blob/master/data_utils/get_ast.py). 
+We refer to the AST generation by the xing-hu to generate our AST json file. [Implentation of the AST generation by xing-hu ](https://github.com/xing-hu/EMSE-DeepCom/blob/master/data_utils/get_ast.py). 
 
 # Prufer Sequence Generation 
 
-Following are the steps for generation for Prufer sequence generation
+Following are the steps for generation for Prufer sequence generation.
 
-1) Generate the CSV File from AST file . 
+1) Generate the CSV File from the AST file. 
 
 ```
 python3 ASTtoCSV.py
@@ -38,17 +38,4 @@ python3 PruferSequenceGeneration.py
 ```
 
 # Context of the Code generation 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
