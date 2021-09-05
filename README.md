@@ -39,3 +39,13 @@ python3 PruferSequenceGeneration.py
 
 # Context of the Code generation 
 
+To genererate the Context of the code run :
+
+
+````
+
+python3 Context.py
+
+
+```
+
