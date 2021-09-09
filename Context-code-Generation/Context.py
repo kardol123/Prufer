@@ -17,15 +17,23 @@ def neighbourt(T,item):# (T,item,st1,list1,list2):
     
     st1=""
     
-    if item in T.nodes():
-        for n in T.neighbors(item):
-            if n > item and T.degree(n) == 1:
-                st1=st1+str(n)+"_"
-                #print(st1)
-            
-            
+    if item == 0:
+        if item in T.nodes():
+            for n in T.neighbors(item):
+                if n > item and T.degree(n) == 1:
+                    st1=st1+str(n)+"_"
+                     #print(st1)
+                
+        st1=str(item)+"_"+st1
+        return st1
     
-    return st1
+    else:
+        if item in T.nodes():
+            for n in T.neighbors(item):
+                if n > item and T.degree(n) == 1:
+                    st1=st1+str(n)+"_"
+                     #print(st1)
+        return st1
 
 
 def prufercode_context(parent_node_list,child_node_list,explanation_node,context_node,count):
@@ -67,9 +75,6 @@ def prufercode_context(parent_node_list,child_node_list,explanation_node,context
 
                 if  ab23=='BlockStatement' or ab23=='StatementExpression' :#or ab23 =='ForStatement' or ab23=='SwitchStatementCase' or ab23 == 'WhileStatement'or ab23 =='IfStatement' or ab23 =='BlockStatement'or ab23 =='TryStatement'or ab23=='SwitchStatement'or ab23=='ContinueStatement' or ab23=='DoStatement' or ab23=='ReturnStatement'or ab23=='Assignment':#or ab23=='SynchronizedStatement'or ab23=='Assignment'or ab23=='ClassCreator'or ab23=='MethodDeclaration':#  or ab23=='LambdaExpression'or ab23=='CatchClause':#or ab23=='LocalVariableDeclaration'or ab23=='BinaryOperation': 
                     list_of_neighbour.append(ab23+"_")
-                    
-                elif eachitem==0:
-                    list_of_neighbour.append(str(eachitem)+"_")
                     
                 else: 
                     k1=neighbourt(T,eachitem)
