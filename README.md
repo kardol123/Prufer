@@ -51,5 +51,9 @@ python3 Context.py
 
 # Dataset 
 
-We use two datsets to test the efficiency and the efficacy 
+We use two datsets to test the efficiency and the efficacy of the Code Comment generation model. 
+
+1) [TL-CodeSum Dataset](https://github.com/xing-hu/TL-CodeSum)
+2) [COdeXGlue Dataset](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Text/code-to-text)
+
 
